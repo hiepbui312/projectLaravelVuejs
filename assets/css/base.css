@@ -1,0 +1,106 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #FCB800;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    
+    font-family: 'Open Sans', sans-serif;;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.no-cursor {
+    cursor: text;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.active {
+    display: block !important;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #e6e6e6;
+    color: #888;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2.4rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    padding: 10px 15px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2.4rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

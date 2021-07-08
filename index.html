@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armania</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/icon-brand.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Header - start -->
+        <header class="page-header">
+            <div class="header-container">
+                <!-- Header top-bar -->
+                <div class="header-topbar">
+                    <div class="header-topbar__advertisement">
+                        <img src="./assets/img/topbar-advertisement.jpg" alt="">
+                    </div>
+                    <div class=" header-topbar__inner-wrap">
+                        <div class="grid wide">
+                            <div class="row container header-topbar__inner">
+                                <div class="topbar-inner__link">
+                                    <p>Welcome to our online store - Always free delivery</p>
+                                </div>
+                                <div class="topbar-inner__link">
+                                    <a href="" class="topbar-inner__link__store-locator" title="Store location">Store Location</a>
+                                    <div class="topbar-inner__link__language-currency">
+                                        <div class="topbar__switcher-language">
+                                            <div class="topbar__switcher-language__option">
+                                                <div onclick="showDropDownMenu()" class="topbar__switcher-language__trigger">
+                                                    <span class="language__trigger">English 21</span>
+                                                    <i class="language__trigger ti-angle-down arrow-down-icon"></i>
+                                                </div>
+                                                <!-- add class 'active' to show drop down menu -->
+                                                <ul class="topbar__switcher-language__drop-down ">
+                                                    <li class="topbar__switcher-language__item">
+                                                        <a class="topbar__switcher-language__link" href="">English 22</a>
+                                                    </li>
+                                                    <li class="topbar__switcher-language__item">
+                                                        <a class="topbar__switcher-language__link" href="">English 23</a>
+                                                    </li>
+                                                    <li class="topbar__switcher-language__item">
+                                                        <a class="topbar__switcher-language__link" href="">English 24</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="topbar-inner__link__language-currency">
+                                        <div class="topbar__switcher-language">
+                                            <div class="topbar__switcher-language__option">
+                                                <div id="clicks" class="topbar__switcher-language__trigger">
+                                                    <span class="language__trigger">USD - US Dollar</span>
+                                                    <i class="language__trigger ti-angle-down arrow-down-icon"></i>
+                                                </div>
+                                                <ul class="topbar__switcher-language__drop-down">
+                                                    <li class="topbar__switcher-language__item">
+                                                        <a class="topbar__switcher-language__link" href="">GBP - British Pound</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header middle-bar -->
+                <div class="grid wide header-middle">
+                    <div class="row container header-middle__container">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/img/logo-brand.png" alt="">
+                        </a>
+                        <!-- Search -->
+                        <div class="header-search">
+                            <div class="header-search__block-search">
+                                <div class="block-search__content">
+                                    <i class="search-icon fas fa-search"></i>
+                                    <div class="search-field">
+                                        <div class="search-field__control">
+                                            <input type="text" class="search-field__input-text" placeholder="Search entire store here...">
+                                            <div class="search-field__control__search-suite">
+                                                <!-- Search suggest -->
+                                                <!-- Remove class 'hidden' to display -->
+                                                <div class="search-suggest hidden">
+                                                    <div class="search-suggest__container">
+                                                        <div class="search-suggest__heading">
+                                                            <span>Products</span>
+                                                            <a href=""class="search-suggest__see-all">
+                                                                <span>See all</span>    
+                                                                <span class="see-all__result">20</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="search-suggest__product">
+                                                            <ul class="search-suggest__product__list">
+                                                                <li class="search-suggest__product__item">
+                                                                    <a href="" class="search-suggest__product__link">
+                                                                        <div class="search-suggest__img">
+                                                                            <a href="" class="search-suggest__img__link" alt="" title="iPad Mini wifi 4G">
+                                                                                <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="search-suggest__info">
+                                                                            <div class="search-suggest__info__titile">
+                                                                                <a href="" class="search-suggest__info__titile-link">iPad Mini wifi 4G </a>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__review">
+                                                                                <div class="product-reviews-summary">
+                                                                                    <div class="rating-result">
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="reviews-actions">
+                                                                                        <a href="" class="review-sum">1
+                                                                                        <span>review</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__price">
+                                                                                <div class="special-price">$368.99</div>
+                                                                                <div class="old-price">$569.99</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="search-suggest__product__item">
+                                                                    <a href="" class="search-suggest__product__link">
+                                                                        <div class="search-suggest__img">
+                                                                            <a href="" class="search-suggest__img__link" alt="" title="iPad Mini wifi 4G">
+                                                                                <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="search-suggest__info">
+                                                                            <div class="search-suggest__info__titile">
+                                                                                <a href="" class="search-suggest__info__titile-link">Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur adipisicing elit adipisicing elit</a>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__review">
+                                                                                <div class="product-reviews-summary">
+                                                                                    <div class="rating-result">
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="reviews-actions">
+                                                                                        <a href="" class="review-sum">1
+                                                                                        <span>review</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__price">
+                                                                                <div class="special-price">$368.99</div>
+                                                                                <div class="old-price">$569.99</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="search-suggest__product__item">
+                                                                    <a href="" class="search-suggest__product__link">
+                                                                        <div class="search-suggest__img">
+                                                                            <a href="" class="search-suggest__img__link" alt="" title="iPad Mini wifi 4G">
+                                                                                <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="search-suggest__info">
+                                                                            <div class="search-suggest__info__titile">
+                                                                                <a href="" class="search-suggest__info__titile-link">iPad Mini wifi 4G </a>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__review">
+                                                                                <div class="product-reviews-summary">
+                                                                                    <div class="rating-result">
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="reviews-actions">
+                                                                                        <a href="" class="review-sum">1
+                                                                                        <span>review</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__price">
+                                                                                <div class="special-price">$368.99</div>
+                                                                                <div class="old-price">$569.99</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="search-suggest__product__item">
+                                                                    <a href="" class="search-suggest__product__link">
+                                                                        <div class="search-suggest__img">
+                                                                            <a href="" class="search-suggest__img__link" alt="" title="iPad Mini wifi 4G">
+                                                                                <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="search-suggest__info">
+                                                                            <div class="search-suggest__info__titile">
+                                                                                <a href="" class="search-suggest__info__titile-link">iPad Mini wifi 4G </a>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__review">
+                                                                                <div class="product-reviews-summary">
+                                                                                    <div class="rating-result">
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="reviews-actions">
+                                                                                        <a href="" class="review-sum">1
+                                                                                        <span>review</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__price">
+                                                                                <div class="special-price">$368.99</div>
+                                                                                <div class="old-price">$569.99</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="search-suggest__product__item">
+                                                                    <a href="" class="search-suggest__product__link">
+                                                                        <div class="search-suggest__img">
+                                                                            <a href="" class="search-suggest__img__link" alt="" title="iPad Mini wifi 4G">
+                                                                                <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="search-suggest__info">
+                                                                            <div class="search-suggest__info__titile">
+                                                                                <a href="" class="search-suggest__info__titile-link">iPad Mini wifi 4G </a>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__review">
+                                                                                <div class="product-reviews-summary">
+                                                                                    <div class="rating-result">
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon rating-icon--active far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                        <i class="rating-icon far fa-star"></i>
+                                                                                    </div>
+                                                                                    <div class="reviews-actions">
+                                                                                        <a href="" class="review-sum">1
+                                                                                        <span>review</span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="search-suggest__info__price">
+                                                                                <div class="special-price">$368.99</div>
+                                                                                <div class="old-price">$569.99</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Search suggest - No result -->
+                                                <div class="search-no-result hidden">No Result</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="search-field__action">
+                                            <button class="search-field__action-btn no-cursor" type="submit">
+                                                <span>Search</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header-search__search-key">
+                                <ul class="search-key__list">
+                                    <li class="search-key__item">
+                                        <a href="#" class="search-key__link">Computer & Laptops</a>
+                                    </li>
+                                    <li class="search-key__item">
+                                        <a href="#" class="search-key__link">Camera & Photo</a>
+                                    </li>
+                                    <li class="search-key__item">
+                                        <a href="#" class="search-key__link">SmartPhone & Tablets</a>
+                                    </li>
+                                    <li class="search-key__item">
+                                        <a href="#" class="search-key__link">Games & Consoles</a>
+                                    </li>
+                                    <li class="search-key__item">
+                                        <a href="#" class="search-key__link">Fashion & Jewellry</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-action">
+                            <div class="header-action__wish-list">
+                                <i class="header-action__wish-list-icon far fa-heart"></i>
+                                <span class="wish-list__count">0</span>
+                            </div>
+                            <!-- Cart -->
+                            <div class="header-action__cart">
+                                <div class="header-action__cart-header">
+                                    <i class="header-action__cart-icon fas fa-shopping-cart"></i>
+                                    <span class="cart__count">0</span>
+                                </div>
+
+                                <div class="header-action__cart-list ">
+                                    <div class="header-cart-list-wrapper">
+                                        <div class="close-btn header-cart-list__close-btn">
+                                            <i class="ti-close"></i>
+                                        </div>
+                                        <!-- Cart has no item -->
+                                        <div class="hidden header-cart-no-item__msg">You have no items in your shopping cart.</div>
+
+                                        <!-- Cart has items -->
+                                        <div class="header-cart-has-items">
+                                            <div class="header-cart-has-items__wrapper">
+                                                <ol class="header-cart__list">
+                                                    <li class="header-cart__item">
+                                                        <a href="" class="header-cart__item-img">
+                                                            <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                        </a>
+                                                        <div class="header-cart__item-detail">
+                                                            <a href="" class="item-detail__name">iPad Mini wifi 4G</a>
+                                                            <div class="item-detail__pricing">
+                                                                <div class="item-detail__price-container">$368.99</div> 
+                                                                <i class="qty-mul-icon ti-close"></i>
+                                                                <div class="item-detail__qty">1</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-cart__item-action">
+                                                            <div class="item-action__primary">
+                                                                <a href="" class="item-action__primary-link">
+                                                                    <i class="ti-close"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-action__secondary">
+                                                                <a href="" class="item-action__secondary-link">
+                                                                    <i class="fas fa-cog"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="header-cart__item">
+                                                        <a href="" class="header-cart__item-img">
+                                                            <img src="./assets/img/products/tablet_samll_01_1.jpg" alt="">
+                                                        </a>
+                                                        <div class="header-cart__item-detail">
+                                                            <a href="" class="item-detail__name">iPad Mini wifi 4G Lorem ipsum dolor sit</a>
+                                                            <div class="item-detail__pricing">
+                                                                <div class="item-detail__price-container">$368.99</div> 
+                                                                <i class="qty-mul-icon ti-close"></i>
+                                                                <div class="item-detail__qty">1</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-cart__item-action">
+                                                            <div class="item-action__primary">
+                                                                <a href="" class="item-action__primary-link">
+                                                                    <i class="ti-close"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item-action__secondary">
+                                                                <a href="" class="item-action__secondary-link">
+                                                                    <i class="fas fa-cog"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class="header-cart-has-items__subtotal">
+                                                <span class="items__subtotal__label">Cart Subtotal</span>
+                                                <div class="items__subtotal__price">$2368.99</div>
+                                            </div>
+                                            <div class="header-cart-has-items__action">
+                                                <button class="btn check-out-btn">Proceed to Checkout</button>
+                                            </div>
+                                            <div class="header-cart-has-items__action">
+                                                <a href="" class="btn-primary items__action__view-card">View Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="header-action__account">
+                                <div class="header-action__account-icon">
+                                    <i class="far fa-user-circle"></i>
+                                </div>
+                                <div class="header-action__account-wrap">
+                                    <a href=""class="account__link">
+                                        Sign In
+                                    </a>
+                                    <a href="" class="account__link">
+                                        Create an Account
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header content -->
+                <div class="grid wide header-content">
+                    <div class="row container header-content__container">
+                        <div class="header-content__menu">
+                            <div class="vertical-menu">
+                                <nav class="vertical-menu-category" onclick="toggleMenu()">
+                                    <h3 class="vertical-menu-category__title">
+                                        <i class="ti-menu-alt"></i>
+                                        <span>All Categories</span>
+                                    </h3>
+                                    <ul class="vertical-menu-category__list">
+                                        <h3 class="mobile-primary-menu__title">
+                                            <span>All Categories</span>
+                                            <i class="close-btn ti-close" id="close-category"></i>
+                                        </h3>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-mobile-alt"></i>
+                                                Smart Phones 
+                                                <i class="icon-arrow-right ti-angle-right"></i>
+                                            </a>
+                                            <div class="grid wide vertical-menu__sub-category">
+                                                <div class="row sub-category__list-wrapper ">
+                                                    <ul class="col l-4 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                SmartPhone
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Cell Phones
+                                                            </a>
+                                                            <ul class="sub-child-menu ">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printers & Supplies</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="col l-4 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Laptop & Computer
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Desktop Computer</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Monitor</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Hard Driver & Storage</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">iPad & Tablets</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Laptops</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printer & Supplies</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Computer Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Keybroad & Computer
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Home Audio Speakers</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Projectors</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Tvs</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="col l-4 sub-category__img">
+                                                        <img src="./assets/img/sub-menu/bg_smart-phone.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="fas vertical-munu-category__link-icon fa-headphones-alt"></i>
+                                                Head Phones 
+                                                <i class="icon-arrow-right ti-angle-right"></i>
+                                            </a>
+                                            <div class="grid wide vertical-menu__sub-category">
+                                                <div class="row sub-category__list-wrapper ">
+                                                    <ul class="col l-6 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Headphone
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Accessories
+                                                            </a>
+                                                            <ul class="sub-child-menu ">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printers & Supplies</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="col l-6 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Laptop & Computer
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Desktop Computer</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Monitor</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Hard Driver & Storage</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">iPad & Tablets</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Laptops</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printer & Supplies</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Computer Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class ="vertical-munu-category__link-icon fas fa-camera"></i>
+                                                Cameras & Photos
+                                                <i class="icon-arrow-right ti-angle-right"></i>
+                                            </a>
+                                            <div class="grid wide vertical-menu__sub-category">
+                                                <div class="row sub-category__list-wrapper ">
+                                                    <ul class="col l-3 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Cameras
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col l-3 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Accessories
+                                                            </a>
+                                                            <ul class="sub-child-menu ">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printers & Supplies</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col l-3 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Cell Phones
+                                                            </a>
+                                                            <ul class="sub-child-menu ">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printers & Supplies</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="col l-3 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Laptop & Computer
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Desktop Computer</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Monitor</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Hard Driver & Storage</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">iPad & Tablets</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Laptops</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Computer Accessories</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="sub-category__list__img">
+                                                        <img src="./assets/img/sub-menu/vertical_img-10_4_.jpg" alt="">
+                                                        <img src="./assets/img/sub-menu/vertical_img-10_5_.jpg" alt="">
+                                                        <img src="./assets/img/sub-menu/vertical_img-10_6_.jpg" alt="">
+                                                        <img src="./assets/img/sub-menu/vertical_img-10_7_.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class= "vertical-munu-category__link-icon fas fa-sink"></i>
+                                                 Electric Kitchens
+                                                 <i class="icon-arrow-right ti-angle-right"></i>
+                                            </a>
+                                            <div class="grid wide  vertical-menu__sub-category">
+                                                <div class="row sub-category__list-wrapper ">
+                                                    <ul class="col l-4 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Kettlet
+                                                            </a>
+                                                            <ul class="sub-child-menu">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col l-4 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Washingmachine
+                                                            </a>
+                                                            <ul class="sub-child-menu ">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Printers & Supplies</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="col l-4 sub-category__list">
+                                                        <li class="sub-category__item">
+                                                            <a href="" class="sub-category__link">
+                                                                Fridge
+                                                            </a>
+                                                            <ul class="sub-child-menu ">
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Carrier Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Unlocked Phones</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Phone & Cellphone</a>
+                                                                </li>
+                                                                <li class="sub-child-menu__item">
+                                                                    <a href="" class="sub-child-menu__link">Cellphone Charges</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="sub-category__list__img">
+                                                        <img src="./assets/img/sub-menu/kitchen-vertical-3-1.png" alt="">
+                                                        <img src="./assets/img/sub-menu/kitchen-vertical-4-1.png" alt="">
+                                                        <img src="./assets/img/sub-menu/kitchen-vertical-5-1.jpg" alt="">
+                                                        <img src="./assets/img/sub-menu/kitchen-vertical-6-1.jpg" alt="">
+                                                        <img src="./assets/img/sub-menu/kitchen-vertical-7-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-tablet-alt"></i>
+                                                 Tablets & Mac
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon far fa-gem"></i>
+                                                 Jewelrys
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-tshirt"></i>
+                                                 Fashion Clothings
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-wifi"></i>
+                                                 Router Wifi
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-podcast"></i>
+                                                 Ultrasound
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-memory"></i>
+                                                 Computer Card
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                <i class="vertical-munu-category__link-icon fas fa-hat-cowboy"></i>
+                                                 Shoes & Hats 
+                                            </a>
+                                        </li>
+                                        <li class="vertical-menu-category__item">
+                                            <a href="" class="vertical-menu-category__link">
+                                                 More Categories
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <i class="ti-menu menu-icon"></i>
+                            <div class="overlay"></div>
+                            <nav class="primary-menu">
+                                <ul class="primary-menu__list">
+                                    <h3 class="mobile-primary-menu__title">
+                                        <span>Menu</span>
+                                        <i class="close-btn ti-close" id="close-menu"></i>
+                                    </h3>
+                                    <li class="primary-menu__item">
+                                        <a href="" class="primary-menu__link page-current">Home</a>
+                                    </li>
+                                    <li class="primary-menu__item">
+                                        <a href="" class="primary-menu__link">
+                                            Shop
+                                            <span class="primary-menu__link-hot">HOT!</span>
+                                        </a>
+                                    </li>
+                                    <li class="primary-menu__item ">
+                                        <a href="" class="primary-menu__link no-cursor">
+                                            Page
+                                            <i class="ti-angle-down arrow-down-icon"></i>
+                                        </a>
+                                    </li>
+                                    <li class="primary-menu__item">
+                                        <a href="" class="primary-menu__link">Blog</a>
+                                    </li>
+                                    <li class="primary-menu__item">
+                                        <a href="" class="primary-menu__link">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-content__action">
+                            <div class="hotline">
+                                <span class="hotline-title">Hotline: </span>
+                                <a href="tel:(+800) 1234 56789"class="hotline-number">(+800) 1234 56789</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header - end -->
+
+
+        <footer>
+            <div class="footer-bottom-mobile">
+                <ul class="footer-bottom-mobile__list">
+                    <li class="footer-bottom-mobile__item">
+                        <a href="" class="footer-bottom-mobile__link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="footer-bottom-mobile__item">
+                        <a href="" class="footer-bottom-mobile__link">
+                            <i class="fas fa-bars"></i>
+                            <span>Menu</span>
+                        </a>
+                    </li>
+                    <li class="footer-bottom-mobile__item">
+                        <a href="" class="footer-bottom-mobile__link">
+                            <i class="fas fa-user"></i>
+                            <span>Account</span>
+                        </a>
+                    </li>
+                    <li class="footer-bottom-mobile__item">
+                        <a href="" class="footer-bottom-mobile__link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
