@@ -590,7 +590,6 @@
 .header-content__container {
     align-items: center;
     justify-content: space-between;
-    padding-right: 150px;
 }
 
 .header-content__menu {
@@ -598,8 +597,8 @@
     align-items: center;
 }
 
-.vertical-menu {
-    margin-right: 2rem;
+.vertical-menu__wrapper {
+    margin: 0 !important;
 }
 
 .vertical-menu-category {
@@ -607,16 +606,18 @@
 }
 
 .vertical-menu-category__title {
-    line-height: 50px;
-    min-width: 21rem;
+    
+    height: 50px;
+    width: 100%;
     font-size: 1.6rem;
     color: var(--text-color);
-    padding: 0 2rem;
+    padding: 0 1rem;
     background-color: var(--primary-color);
     cursor: pointer;
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .vertical-menu-category__title i {
@@ -624,8 +625,10 @@
     font-size: 1.8rem;
 }
 
+
 .vertical-menu-category__list {
     position: absolute;
+    top: 100%;
     padding-left: 0;
     margin: 0;
     list-style: none;
@@ -874,6 +877,7 @@
 
 .page-main.container {
     background-color: #eeeeee;
+    margin-bottom: 70px;
 }
 
 .box-on-top__slider {
@@ -950,6 +954,13 @@
     background-color: var(--white-color);
     margin: 0 10px;
     box-shadow: 1px 1px 13px 1px rgb(0 0 0 / 10%);
+    flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.slider__product-tab__list::-webkit-scrollbar {
+    display: none;
 }
 
 .slider__product-tab__item {
@@ -963,6 +974,20 @@
 
 .product-tab__info {
     display: flex;
+    justify-content: space-between;
+}
+
+.product-tab__info-detail {
+    flex: 1;
+}
+
+.product-on-left__info-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.product-on-left__info-row::-webkit-scrollbar {
+    display: none;
 }
 
 .product-tab__info-img {
@@ -980,10 +1005,6 @@
 .product-on-left__wrapper {
     position: relative;
     background-color: var(--white-color);
-}
-
-.box-on-top__product-on-left {
-    padding-left: 25px;
 }
 
 .product-on-left__price {
@@ -1092,6 +1113,7 @@
     right: 0;
     left: 0;
     border-top: 1px solid #e6e6e6;
+    background-color: var(--white-color);
     display: none;
 }
 
