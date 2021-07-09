@@ -52,6 +52,11 @@ h3 {
     display: block !important;
 }
 
+.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
 .btn {
     padding: 10px 15px;
     background: #e6e6e6;
@@ -85,6 +90,37 @@ h3 {
     cursor: pointer;
 }
 
+.previous-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    color: var(--text-color);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    cursor: pointer;
+}
+
+.next-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    color: var(--text-color);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
+}
+
+.btn--disabled {
+    color: #bbb;
+    background-color:#eee;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -104,3 +140,49 @@ h3 {
         opacity: 1
     }
 }
+
+.price-final {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+
+.price-old {
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 600;
+    text-decoration: line-through;
+    line-height: 2.4rem;
+}
+
+.product-name {
+    font-size: 1.4rem;
+    color: #527AFF;
+    line-height: 2.4rem;
+}
+
+.product-name:hover{
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.product-img {
+    display: block;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;  
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+    transform: scale(1)
+}
+
+.product-img:hover img{
+    transform: scale(1.4)
+}
+
+
+
