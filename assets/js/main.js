@@ -130,24 +130,6 @@ function handleMenu () {
     });
 }
 
-handleHover();
-function handleHover() {
-    const productInfo = document.querySelector('.product-on-left__info-row');
-    const preBtn = document.querySelector('.product-on-left-action__pre');
-    const nextBtn = document.querySelector('.product-on-left-action__next')
-
-    productInfo.onmouseover  = function () {
-        preBtn.classList.add('show');
-        nextBtn.classList.add('show');
-    }
-
-    productInfo.onmouseout  = function () {
-        preBtn.classList.remove('show');
-        nextBtn.classList.remove('show');
-    }
-}
-
-
 
 
 

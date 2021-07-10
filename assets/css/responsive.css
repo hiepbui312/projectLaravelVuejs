@@ -146,6 +146,61 @@
         padding-left: 0;
     }
 
+    .hot-deal__heading {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0 12px 15px 0;
+    }
+
+    .hot-deal__heading__des {
+        font-size: 2.8rem;
+        padding: 10px 15px;
+    }
+
+    .hot-deal__heading__des span {
+        font-size: 3.2rem;
+    }
+
+    .hot-deal__heading__view-btn {
+        margin: 0 15px;
+    }
+
+    .hot-deal__product {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .hot-deal__product::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hot-deal__product-wrapper {
+        flex-direction: column;
+    }
+
+    .hot-deal__product-img {
+        order: -1;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    /* Hot categories */
+
+    .hot-categories__titile {
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 12px;
+    }
+
+    .hot-categories__list {
+        justify-content: flex-start;
+    }
+
+    .hot-categories__item {
+        margin-bottom: 12px;
+        padding: 0 15px
+    }
 }
 
 /* Tablet */
@@ -204,6 +259,13 @@
 
     .slider__banner-text__buy-btn {
         margin-top: 30px;
+    }
+
+    .hot-deal__product-img {
+        order: -1;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
     }
 
 }
@@ -311,6 +373,34 @@
     .product-on-left__name,
     .product-tab__info-detail__name {
         font-size: 1.6rem;
+    }
+
+    .hot-deal__heading__countdown {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    .hot-deal__product-img {
+        order: -1;
+        width: 90%;
+        height: 90%;
+        padding-left: 0;
+    }
+
+    .hot-categories__item {
+        width: 100%;
+    }
+
+    .hot-categories__name {
+        width: 100%;
+    }
+
+    .hot-categories__name::after {
+        right: 0;
+    }
+
+    .hot-categories__product-img {
+        width: 85%;
     }
 }
 
