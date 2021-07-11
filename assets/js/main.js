@@ -18,18 +18,6 @@ closeBtn.onclick = function() {
 }
 
 
-
-function showDropDownMenu() {
-    let dropDownMenu = document.querySelector('.topbar__switcher-language__drop-down');
-    dropDownMenu.classList.toggle('active')
-
-    window.onclick = function(e) {
-        if(!e.target.matches('.topbar__switcher-language__trigger')) {
-            dropDownMenu.classList.remove('active')
-        }
-    }
-}
-
 let toggleMenuStatus = false;
 
 let toggleMenu = function() {

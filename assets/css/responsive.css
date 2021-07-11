@@ -216,6 +216,17 @@
     .tab-item {
         padding: 15px;
     }
+
+    .shipping-wrapper {
+        border: none;
+        justify-content: flex-start;
+        padding: 10px 0;
+    }
+
+    .footer-top__content-wrapper {
+        padding: 0;
+        margin-top: 20px;
+    }
 }
 
 /* Tablet */
@@ -417,6 +428,20 @@
     .hot-categories__product-img {
         width: 85%;
     }
+
+    .footer-bottom_row {
+        margin-bottom: 80px;
+    }
+
+    .footer-bottom__copyright,
+    .footer-bottom__menu li {
+        text-align: center;
+    }
+
+    .footer-top__content-wrapper {
+        text-align: center;
+    }
+
 }
 
 /* > PC low resolution */

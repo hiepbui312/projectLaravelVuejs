@@ -27,11 +27,16 @@ a {
     outline: none;
 }
 
-h3 , h2, p{
+h5, h4, h3 , h2, p{
     margin: 0;
 }
 
-
+.size-18 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
 
 .container {
     width: 100%;
