@@ -121,6 +121,7 @@ h3 , h2, p{
     color: var(--text-color);
     font-weight: 600;
     line-height: 2.4rem;
+    padding-right: 8px;
 }
 
 .price-old {
@@ -144,6 +145,9 @@ h3 , h2, p{
 
 .product-name:hover{
     color: var(--primary-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -151,12 +155,16 @@ h3 , h2, p{
     display: block;
     overflow: hidden;
     max-width: 100%;
+    padding-right: 10px;
 }
 
 .product-img img {
     width: 100%;  
     height: auto;
     display: block;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
     transform: scale(1)
 }
@@ -224,10 +232,6 @@ h3 , h2, p{
     background-color: var(--primary-color);
 }
 
-.product-wrapper {
-    position: relative;
-}
-
 .product-wrapper .onsale {
     position: absolute;
     top: 0;
@@ -254,6 +258,7 @@ h3 , h2, p{
     visibility: hidden;
     position: relative;
     bottom: 20px;
+    text-align: center;
 }
 
 @keyframes showUp {
@@ -327,4 +332,178 @@ h3 , h2, p{
 .product-wrapper:hover .pre-and-next{
     opacity: 1;
     visibility: visible;
+}
+
+.product-wrapper--medium {
+    padding: 7px 20px;
+}
+
+.product-wrapper {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+}
+
+.product-wrapper:first-child {
+    border-left: 1px solid #e6e6e6;
+}
+
+.tag-title__wrapper {
+    background-color: #FDF4ED;
+}
+
+.tag-title {
+    display: flex;
+}
+
+.tag-title h2{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    
+    padding: 12px 45px 12px 20px;
+    background-color: var(--primary-color);
+    border-bottom-right-radius: 20px;
+}
+
+.mg-bot-35 {
+    margin-bottom: 35px;
+}
+
+.mg-bot-60 {
+    margin-bottom: 60px !important;
+}
+
+.mg-left-15 {
+    margin-left: 15px;
+}
+
+.mg-right-15 {
+    margin-right: 15px;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-wrapper {
+    position: relative;
+}
+
+.img-hover-light-effect::before, 
+.img-hover-light-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.banner-wrapper:hover .img-hover-light-effect::before,
+.banner-wrapper:hover .img-hover-light-effect::after {
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.banner-wrapper:hover .img-hover-light-effect::before {
+    width: 0;
+}
+
+.banner-wrapper:hover .img-hover-light-effect::after {
+    height: 0;
+}
+
+.tab--active {
+    color: var(--primary-color) !important;
+}
+
+.tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-item {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-link:hover .cat-name{
+    color: var(--primary-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.cat-name {
+    font-size: 1.4rem;
+    color: #8d8d8d;
+}
+
+.tab-banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.onsale.onsale--right {
+    left: initial;
+    right: 0;
+}
+
+.brand-list {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-list-haft {
+    padding: 10px 0;
+}
+
+.brand-img img{
+    width: 100%;
+}
+
+.banner-img,
+.banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.item-horizontal {
+    display: flex;
+    width: 100%;
+    min-height: 140px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.item-horizontal .product-img {
+    max-width: 40%;
+    min-width: 35%;
+}
+
+.item-horizontal .product-info {
+    flex: 1;
+}
+
+.no-border {
+    border: none !important;
 }

@@ -1,5 +1,10 @@
 /* Mobile & tablet */
 @media (max-width: 1199px) {
+
+    /* .product-img img {
+        width: 90%;
+    } */
+
     .header-search {
         order: 3;
         margin-top: 15px;
@@ -200,6 +205,16 @@
     .hot-categories__item {
         margin-bottom: 12px;
         padding: 0 15px
+    }
+
+
+    .tag-title,
+    .tag-title h2 {
+        width: 100%;
+    }
+
+    .tab-item {
+        padding: 15px;
     }
 }
 
