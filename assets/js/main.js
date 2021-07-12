@@ -46,17 +46,14 @@ const app = {
     
         categoryIcon.onclick = () => {
             catetagoryList.classList.toggle('show-menu');
-            // overlay.classList.toggle('active');
         }
 
         function resizeFix(){
             if(menuMobile.classList.contains("show-menu")){
                 menuMobile.classList.remove('show-menu');
-                // overlay.classList.remove('active');
             }
             if(catetagoryList.classList.contains("show-menu")){
-                catetagoryList.classList.remove('show-menu');
-                // overlay.classList.remove('active');
+                catetagoryList.classList.remove('show-menu');g
             }
         }
         
@@ -67,28 +64,7 @@ const app = {
         });
     },
 
-    // Toggle vertical menu
-    toggleMenu: function () {
-
-        let toggleMenuStatus = false;
-        let getCategory = document.querySelector('.vertical-menu-category__list');
-
-        if(toggleMenuStatus === false) {
-            getCategory.style.visibility = 'hidden';
-            getCategory.style.opacity = '0,8';
-            getCategory.style.height = '0';
-
-            toggleMenuStatus = true;
-        }
-
-        else if(toggleMenuStatus === true) {
-            getCategory.style.visibility = 'visible';
-            getCategory.style.opacity = '1';
-            getCategory.style.height = '453px';
-
-            toggleMenuStatus = false;
-        }
-    },
+    
 
     // Fixed header on top
     stickyHeader: function () {
@@ -162,6 +138,7 @@ const app = {
 
         this.handleCartList();
 
+
         this.handleMenu();
 
         this.stickyHeader();
@@ -172,3 +149,26 @@ const app = {
 
 app.start();
 
+// Toggle vertical menu
+let toggleMenuStatus = false;
+function toggleMenu () {
+
+    console.log(123)
+    let getCategory = document.querySelector('.vertical-menu-category__list');
+
+    if(toggleMenuStatus === false) {
+        getCategory.style.visibility = 'hidden';
+        getCategory.style.opacity = '0,8';
+        getCategory.style.height = '0';
+
+        toggleMenuStatus = true;
+    }
+
+    else if(toggleMenuStatus === true) {
+        getCategory.style.visibility = 'visible';
+        getCategory.style.opacity = '1';
+        getCategory.style.height = '472px';
+
+        toggleMenuStatus = false;
+    }
+}

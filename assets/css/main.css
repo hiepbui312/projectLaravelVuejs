@@ -644,9 +644,8 @@
     background-color: #252221;
     opacity: 1;
     visibility: visible;
-    /* transition: all 1s ease-in-out; */
-    /* animation: slideUpVerticalMenu 3s ease */
-
+    transition: all 0.8s ease;
+    /* animation: slideUpVerticalMenu 0.3s ease */
 }
 
 /* @keyframes slideUpVerticalMenu {
