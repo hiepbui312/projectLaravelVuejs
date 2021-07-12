@@ -45,6 +45,11 @@ h5, h4, h3 , h2, p{
     margin: auto;
 }
 
+
+.pointer {
+    cursor: pointer;
+}
+
 .no-cursor {
     cursor: text;
 }
@@ -60,6 +65,15 @@ h5, h4, h3 , h2, p{
 .show {
     opacity: 1 !important;
     visibility: visible !important;
+}
+
+.hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.hide-on-tablet {
+    display: none !important;
 }
 
 .btn {
@@ -373,6 +387,12 @@ h5, h4, h3 , h2, p{
     border-bottom-right-radius: 20px;
 }
 
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
 .mg-bot-35 {
     margin-bottom: 35px;
 }
@@ -389,6 +409,14 @@ h5, h4, h3 , h2, p{
     margin-right: 15px;
 }
 
+.pd-bot-0 {
+    padding-bottom: 0 !important;
+}
+
+.pd-15 {
+    padding: 15px !important;
+}
+
 .overflow-x-auto {
     overflow-x: auto;
     flex-wrap: nowrap;
@@ -396,6 +424,10 @@ h5, h4, h3 , h2, p{
 
 .overflow-x-auto::-webkit-scrollbar {
     display: none;
+}
+
+.img-hover-light-effect img {
+    width: 100%;
 }
 
 .banner-wrapper {
@@ -511,4 +543,67 @@ h5, h4, h3 , h2, p{
 
 .no-border {
     border: none !important;
+}
+
+
+.menu-hover:hover .drop-down-menu {
+    opacity: 1;
+    visibility: visible;
+    animation: slideUp ease 0.4s;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        top: calc(100% + 20px);
+    }
+    to {
+        opacity: 1;
+        top: 100%;
+    }
+}
+
+.menu-wrapper {
+    position: relative;
+}
+
+
+.drop-down-menu {
+    position: absolute;
+    background-color: var(--white-color);
+    z-index: 1;
+    padding-left: 0;
+    list-style: none;
+    min-width: 180px;
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+    margin: 4px 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.drop-down-menu__item {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.drop-down-menu__link:hover {
+    color: var(--primary-color);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.drop-down-menu__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #888;
+    display: block;
+    padding: 0.2rem 1.5rem;
+    line-height: 3.8rem;
+    text-align: left;
+    width: 100%;
 }

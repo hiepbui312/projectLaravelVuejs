@@ -46,6 +46,7 @@
         left: 0;
         background-color: var(--white-color);
         width: 45%;
+        max-width: 45%;
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
@@ -64,10 +65,30 @@
         height: 100%;
     }
 
+    .primary-menu__list .drop-down-menu {
+        display: none;
+        position: initial;
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .drop-down-menu,
+    .drop-down-menu__item {
+        border: none;
+    }
+
+    .menu-hover:hover .drop-down-menu {
+        animation: none;
+    }
+
     .primary-menu__item {
         width: 100%;
         border-bottom: 1px solid #e6e6e6;
     }
+
+
 
     .primary-menu__link {
         padding: 10px 48px 10px 15px;
@@ -227,10 +248,39 @@
         padding: 0;
         margin-top: 20px;
     }
+
+    .header-search {
+        flex-grow: 0;
+        margin: 0;
+        padding-top: 10px
+    }
+    
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1199px) {
+
+    .header-sticky .menu-icon.tablet-menu-icon {
+        /* position: absolute;
+        right: 0;
+        top: 20px; */
+        display: none;
+    }
+
+    .header-sticky .primary-menu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: fit-content;
+        display: initial;
+    }
+
+    .vertical-menu__wrapper.hide {
+        opacity: 1 !important;
+        visibility: visible !important;    
+    }
+
     .header-topbar__inner {
         flex-direction: column;
     }
@@ -298,6 +348,23 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+
+    .header-sticky {
+        position: initial
+    }
+
+    .header-container {
+        position: initial;
+    }
+
+    .page-main {
+        margin-top: 0;
+    }
+
+    .vertical-menu__wrapper {
+        transition: none;
+    }
+
     .header-topbar {
         display: none;
     }
@@ -380,6 +447,7 @@
     .primary-menu,
     .vertical-menu-category__list {
         width: 80%;
+        max-width: 80%;
     }
 
     .slider__product-tab__item {
