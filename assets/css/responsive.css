@@ -254,7 +254,23 @@
         margin: 0;
         padding-top: 10px
     }
+
+    /* Login page */
+    .block.block-customer-login::before,
+    .block.block-customer-login::after {
+        display: none;
+    }
     
+    .block-customer-login {
+        padding-right: 0px;
+    }
+    .block-new-customer {
+        padding-left: 0px;
+    }
+
+    .actions-toolbar button {
+        max-width: 100%;
+    }
 }
 
 /* Tablet */

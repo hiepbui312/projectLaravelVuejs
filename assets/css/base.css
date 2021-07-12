@@ -27,7 +27,7 @@ a {
     outline: none;
 }
 
-h5, h4, h3 , h2, p{
+h5, h4, h3, h2, h1, p{
     margin: 0;
 }
 
@@ -606,4 +606,102 @@ h5, h4, h3 , h2, p{
     line-height: 3.8rem;
     text-align: left;
     width: 100%;
+}
+
+
+.page-title-wrapper {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0d0d0d;
+}
+
+.block-title {
+    font-size: 2.4rem;
+    line-height: 4.1rem;
+    color: #0d0d0d;
+    font-weight: 600;
+}
+
+.field {
+    margin-bottom: 2rem;
+}
+
+.field.note {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #888;
+}
+
+.field>.label {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 400;
+    padding-bottom: 6px;
+    display: block
+}
+
+input[type=email],
+input[type=password] {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1.4rem;
+    height: 45px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.block {
+    margin-bottom: 48px;
+}
+
+.block-content p {
+    font-size: 1.4rem;
+    color: #888;
+    line-height: 2.4rem;
+    margin-bottom: 24px;
+}
+
+.actions-toolbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions-toolbar .primary {
+    margin-bottom: 2rem;
+}
+
+.actions-toolbar button {
+    min-width: 30%;
+    max-width: fit-content;
+}
+
+.actions-toolbar .primary{
+    font-size: 1.4rem;
+    color: #888
+}
+
+.actions-toolbar .secondary a {
+    color: #0d0d0d;
+}
+
+.fieldset.login::after {
+    margin: 12px 0 0;
+    content: '* Required Fields';
+    display: block;
+    color: #e02b27;
+    font-size: 1.2rem;
+}
+
+.fieldset >.field.required .label::after {
+    content: '*';
+    color: #e02b27;
+    font-size: 1.2rem;
+    margin: 0 0 0 6px;
 }
