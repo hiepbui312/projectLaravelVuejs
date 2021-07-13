@@ -18,12 +18,12 @@ const app = {
         const cartList = document.querySelector('.header-action__cart-list')
 
         cartIcon.onclick = function () {
-            cartList.classList.toggle('active');
+            cartList.classList.toggle('visible');
         }
 
         closeBtn.onclick = function() {
             let cartList = document.querySelector('.header-action__cart-list');
-            cartList.classList.remove('active');
+            cartList.classList.remove('visible');
         }
     },
 
@@ -31,17 +31,17 @@ const app = {
     handleMenu: function () {
         closeMenu.onclick = () => {
             menuMobile.classList.remove('show-menu');
-            overlay.classList.toggle('active');
+            overlay.classList.toggle('visible');
         }
         
         closeCategory.onclick = () => {
             catetagoryList.classList.remove('show-menu');
-            // overlay.classList.toggle('active');
+            // overlay.classList.toggle('visible');
         }
         
         menuIcon.onclick = () => {
             menuMobile.classList.toggle('show-menu');
-            overlay.classList.toggle('active');
+            overlay.classList.toggle('visible');
         }
     
         categoryIcon.onclick = () => {
@@ -136,21 +136,20 @@ const app = {
 
         this.handleCartList();
 
-
         this.handleMenu();
 
         this.stickyHeader();
 
         this.dropdownMenu();
+        
     }
 }
 
 app.start();
 
+
 // Toggle vertical menu
-
 let toggleMenuStatus = false;
-
 function toggleMenu () {
 
     let getCategory = document.querySelector('.vertical-menu-category__list');

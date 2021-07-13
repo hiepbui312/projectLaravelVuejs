@@ -280,17 +280,12 @@
     transition: all 0.3s ease;
 }
 
-.product-reviews-summary {
-    display: flex;
-    align-items: center;
-    margin-top: 8px;
+.search-suggest__info .action.view {
+    border-right: none;
 }
 
-.reviews-actions {
-    font-size: 1.2rem;
-    color: var(--text-color);
-    padding-left: 10px;
-    border-left: 1px solid #e6e6e6;
+.search-suggest__info .product-review-summary {
+    margin: 4px 0;
 }
 
 .review-sum:hover {
@@ -315,9 +310,6 @@
     opacity: 0.6;
 }
 
-.search-field__action {
-
-}
 
 .search-field__action-btn {
     background-color: var(--primary-color);
@@ -1819,5 +1811,6 @@
 #scroll-top.show-scroll-btn {
     transform: scale(1);
     /* display: block; */
-
 }
+
+
