@@ -226,6 +226,10 @@ h5, h4, h3, h2, h1, p{
     padding: 25px 15px 20px 30px;
 }
 
+.full-row .item-horizontal {
+    margin: 0;
+}
+
 .full-row .item-horizontal .onsale {
     left: 0;
     right: 91%;
@@ -364,21 +368,39 @@ h5, h4, h3, h2, h1, p{
     z-index: 1;
 }
 
-.product-wrapper:hover .product-action{
-    opacity: 1;
-    visibility: visible;
-    animation: showUp linear 0.2s; 
-}
-
-
 .product-action {
     background-color: #fff;
     padding: 4px;
     opacity: 0;
     visibility: hidden;
     position: relative;
-    bottom: 20px;
+    bottom: 10px;
     text-align: center;
+}
+
+.product-wrapper:hover .product-action{
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+    transition: all 0.3s linear
+    /* animation: showUp linear 0.2s;  */
+}
+
+
+@keyframes showUp {
+    from {
+        opacity: 0.8;
+        bottom: 10px;
+    }
+
+    to{
+        opacity: 1;
+        bottom: 30px;
+    }
+}
+
+.product-action-static {
+    display: flex;
 }
 
 .product-action-static .add-to-wish-list,
@@ -401,18 +423,6 @@ h5, h4, h3, h2, h1, p{
     transition: all 0.3s ease-in-out;
 }
 
-@keyframes showUp {
-    from {
-        opacity: 0.8;
-        bottom: 10px;
-    }
-
-    to{
-        opacity: 1;
-        bottom: 20px;
-    }
-}
-
 
 
 .pre-and-next {
@@ -431,6 +441,7 @@ h5, h4, h3, h2, h1, p{
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .next-btn {
@@ -444,6 +455,7 @@ h5, h4, h3, h2, h1, p{
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .product-action--pre {
@@ -496,6 +508,7 @@ h5, h4, h3, h2, h1, p{
 
 .tag-title {
     display: flex;
+    align-items: center;
 }
 
 .tag-title h2{
@@ -778,6 +791,7 @@ h5, h4, h3, h2, h1, p{
     display: block
 }
 
+input[type=text],
 input[type=email],
 input[type=password] {
     background-color: #fff;
@@ -788,6 +802,22 @@ input[type=password] {
     height: 45px;
     width: 100%;
     padding: 0 10px;
+}
+
+textarea {
+    background: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    font-size: 14px;
+    height: auto;
+    margin: 0;
+    padding: 12px;
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
 }
 
 .block {
@@ -830,6 +860,13 @@ input[type=password] {
     color: #0d0d0d;
 }
 
+.fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+
 .fieldset.login::after {
     margin: 12px 0 0;
     content: '* Required Fields';
@@ -858,7 +895,7 @@ input[type=password] {
 .breadcrumbs-link {
     font-size: 1.4rem;
     line-height: 2.4rem;
-    color: #888;
+    color: #333;
 }
 
 .breadcrumbs-item:not(:last-child):after {

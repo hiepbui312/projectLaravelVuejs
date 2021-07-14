@@ -44,7 +44,7 @@
 
     .vertical-menu-category__list,
     .primary-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
@@ -126,7 +126,6 @@
 
     .vertical-menu-category__list {
         height: 100% !important;
-        transition: none !important;
     }
 
     .vertical-menu-category__link {
@@ -144,6 +143,7 @@
     .vertical-menu__sub-category{
         display: none;
     }
+
 
     /* Page content */
 
@@ -381,6 +381,11 @@
         align-items: center;
         border: 1px solid #e6e6e6;
         background: #fff;
+    }
+
+    /* Product detail page */
+    .product-relate .tag-title, .tag-title h2 {
+        width: auto;
     }
 }
 
@@ -645,8 +650,12 @@
         flex-direction:  column;
     }
 
-    .item-horizontal .product-img {
+    .product-grid.full-row .item-horizontal .product-img {
         min-width: 100%;
+    }
+
+    .product-action-static {
+        display: block;
     }
 
     .product-action-static .btn-add-to-cart {
@@ -666,6 +675,74 @@
         padding: 0;
     }
 
+    /* Product detail page*/
+    .media-nav {
+        display: none;
+    }
+
+    .box-tocart__action {
+        width: 50%;
+    }
+
+    .product-info-detail .tabs-item-wrapper {
+        display: block;
+    }
+
+    .product-info-detail .active {
+        border-bottom: none;
+    }
+
+    .tabs-item-wrapper .tab-item {
+        border: 1px solid #e6e6e6;
+        margin: 6px 0;
+    }
+
+    .product-detail-more-info .col-label {
+        border: none;
+        width: 35%;
+    }
+
+    .product-detail-more-info .col-data {
+        border: none;
+    }
+
+    .product-relate .tag-title-action {
+        display: none
+    }
+
+    .product-relate .product-name {
+        margin-top: 24px
+    }
+
+    .product-detail-review__item .review-content {
+        flex-direction: column;
+    }
+
+    .review-content-right {
+        padding: 0
+    }
+
+    .review-content-left .review-ratings .rating-label {
+        max-width: 100px;
+        min-width: 60px;
+    }
+
+    .rating-summary-item .rating-result {
+        text-align: left; 
+    }
+
+    .review-form-title {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .review-field-ratings {
+        margin-bottom: 30px;
+    }
+
+    .review-form-actions .actions-primary button{
+        width: 100%;
+    }
 }
 
 /* > PC low resolution */

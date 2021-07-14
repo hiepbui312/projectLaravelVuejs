@@ -27,6 +27,47 @@ const app = {
         }
     },
 
+    //Toggle menu 
+
+    toggleMenu: function () {
+        let toggleMenuStatus = false;
+        let getCategory = document.querySelector('.vertical-menu-category__list');
+        let menuItem = document.querySelectorAll('.vertical-menu-category__link');
+        let toggleBtn = document.querySelector('.vertical-menu__wrapper');
+
+        toggleBtn.onclick = function () {
+            
+            if(toggleMenuStatus === false) {
+                getCategory.style.visibility = 'hidden';
+                getCategory.style.opacity = '0,8';
+                getCategory.style.height = '0';
+                
+                menuItemLength = menuItem.length;
+        
+                for(let i = 0; i < menuItemLength; i++) {
+                    // menuItem[i].style.visibility = 'hidden';
+                    menuItem[i].style.opacity = '0';
+                }
+        
+                toggleMenuStatus = true;
+                }
+            
+            else if(toggleMenuStatus === true) {
+                getCategory.style.visibility = 'visible';
+                getCategory.style.opacity = '1';
+                getCategory.style.height = '472px';
+        
+                for(let i = 0; i < menuItemLength; i++) {
+                    // menuItem[i].style.visibility = 'visible';
+                    menuItem[i].style.opacity = '1';
+                }
+        
+                toggleMenuStatus = false;
+            }
+        }
+
+    },
+
     // Handle menu 
     handleMenu: function () {
         closeMenu.onclick = () => {
@@ -132,9 +173,13 @@ const app = {
         }
     },
 
+    
+
     start: function () {
 
         this.handleCartList();
+
+        this.toggleMenu();
 
         this.handleMenu();
 
@@ -147,42 +192,6 @@ const app = {
 
 app.start();
 
-
-// Toggle vertical menu
-let toggleMenuStatus = false;
-function toggleMenu () {
-
-    let getCategory = document.querySelector('.vertical-menu-category__list');
-    let menuItem = document.querySelectorAll('.vertical-menu-category__link');
-
-    if(toggleMenuStatus === false) {
-        getCategory.style.visibility = 'hidden';
-        getCategory.style.opacity = '0,8';
-        getCategory.style.height = '0';
-        
-        menuItemLength = menuItem.length;
-
-        for(let i = 0; i < menuItemLength; i++) {
-            menuItem[i].style.visibility = 'hidden';
-            menuItem[i].style.opacity = '0';
-        }
-
-        toggleMenuStatus = true;
-    }
-
-    else if(toggleMenuStatus === true) {
-        getCategory.style.visibility = 'visible';
-        getCategory.style.opacity = '1';
-        getCategory.style.height = '472px';
-
-        for(let i = 0; i < menuItemLength; i++) {
-            menuItem[i].style.visibility = 'visible';
-            menuItem[i].style.opacity = '1';
-        }
-
-        toggleMenuStatus = false;
-    }
-}
 
 
 
