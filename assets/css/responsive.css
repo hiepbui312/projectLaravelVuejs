@@ -9,6 +9,10 @@
         display: block !important;
     }
 
+    .header-search-container {
+        margin: 0;
+    }
+
     .header-search {
         order: 3;
         margin-top: 15px;
@@ -388,6 +392,23 @@
         width: auto;
     }
 
+    .product-detail-review__item .review-content {
+        flex-direction: column;
+    }
+
+    .review-content-right {
+        padding: 0
+    }
+
+    .review-content-left .review-ratings .rating-label {
+        max-width: 100px;
+        min-width: 60px;
+    }
+
+    .rating-summary-item .rating-result {
+        text-align: left; 
+    }
+
     /* Cart checkout page */
     .cart-main-wrapper {
         margin: 0;
@@ -425,6 +446,38 @@
     .action-update {
         width: 100%;
     }
+
+    .checkout-shipping-address .login .actions-toolbar {
+        flex-direction: column;
+    }
+
+    .checkout-shipping-address .login .actions-toolbar .secondary button {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .payment-option-inner {
+        flex-direction: column;
+    }
+
+    .payment-option-inner .control,
+    .payment-option-inner .actions-toolbar button{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .checkout-shipping-address-wrapper {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .checkout-methods-wrapper {
+        padding: 0;
+    }
+
+    .checkout-payment-method {
+        margin-bottom: 30px;
+    }
 }
 
 /* Tablet */
@@ -453,6 +506,11 @@
 
     .header-topbar__inner {
         flex-direction: column;
+    }
+
+    .header-middle__container,
+    .header-content__container {
+        padding: 15px 0;
     }
 
     .header-middle,
@@ -576,6 +634,7 @@
     .menu-icon {
         position: absolute;
         right: 20px;
+        padding: 0;
     }
 
     .footer-bottom-mobile {
@@ -752,23 +811,6 @@
         margin-top: 24px
     }
 
-    .product-detail-review__item .review-content {
-        flex-direction: column;
-    }
-
-    .review-content-right {
-        padding: 0
-    }
-
-    .review-content-left .review-ratings .rating-label {
-        max-width: 100px;
-        min-width: 60px;
-    }
-
-    .rating-summary-item .rating-result {
-        text-align: left; 
-    }
-
     .review-form-title {
         font-size: 1.8rem;
         line-height: 3rem;
@@ -823,7 +865,7 @@
 /* > PC low resolution */
 @media (min-width: 1200px) and (max-width:1439px) {
     .header-action__account-wrap {
-        display: none;
+        /* display: none; */
     }
 
     .header-content__container {
