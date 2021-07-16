@@ -3,7 +3,7 @@ var closeBtn = document.querySelector('.close-btn');
 var closeMenu = document.querySelector('#close-menu');
 var closeCategory = document.querySelector('#close-category');
 var menuIcon = document.querySelector('.menu-icon');
-var menuMobile = document.querySelector('.primary-menu');
+var primaryMenu = document.querySelector('.primary-menu');
 var overlay = document.querySelector('.overlay');
 var categoryIcon = document.querySelector('.vertical-menu-category__title');
 var catetagoryList = document.querySelector('.vertical-menu-category__list');
@@ -68,45 +68,8 @@ const app = {
 
     },
 
-    // Handle menu 
-    handleMenu: function () {
-        closeMenu.onclick = () => {
-            menuMobile.classList.remove('show-menu');
-            overlay.classList.toggle('visible');
-        }
-        
-        closeCategory.onclick = () => {
-            catetagoryList.classList.remove('show-menu');
-            // overlay.classList.toggle('visible');
-        }
-        
-        menuIcon.onclick = () => {
-            menuMobile.classList.toggle('show-menu');
-            overlay.classList.toggle('visible');
-        }
-    
-        categoryIcon.onclick = () => {
-            catetagoryList.classList.toggle('show-menu');
-        }
-
-        function resizeFix(){
-            if(menuMobile.classList.contains("show-menu")){
-                menuMobile.classList.remove('show-menu');
-            }
-            if(catetagoryList.classList.contains("show-menu")){
-                catetagoryList.classList.remove('show-menu');g
-            }
-        }
-        
-        window.addEventListener("resize", function(){
-          if(this.innerWidth > mediaSize){
-              resizeFix();
-          }
-        });
-    },
-
     // Fixed header on top
-    stickyHeader: function () {
+    fixedHeader: function () {
         const scrollTopBtn = document.getElementById('scroll-top');
         const header = document.querySelector('.page-header')
         const topBar = document.querySelector('.header-topbar');
@@ -181,9 +144,9 @@ const app = {
 
         this.toggleMenu();
 
-        this.handleMenu();
+        // this.handleMenu();
 
-        this.stickyHeader();
+        this.fixedHeader();
 
         this.dropdownMenu();
         
